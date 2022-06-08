@@ -1,3 +1,7 @@
 tests_local.cpp
 *.exe
 *.json
+main
+unit
+*.o
+build
