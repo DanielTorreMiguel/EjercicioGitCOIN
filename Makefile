@@ -2,7 +2,7 @@
 COMMON_SOURCES=Calculadora.cpp Dispositivo.cpp
 MAIN_SOURCES=$(COMMON_SOURCES) main.cpp
 UNIT_SOURCES=$(COMMON_SOURCES) UnitTests.cpp
-LDFLAGS=
+LDFLAGS= -lm
 CFLAGS=-c -Wall -O2
 CC=g++
 

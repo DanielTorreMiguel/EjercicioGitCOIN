@@ -198,7 +198,7 @@ int Calculadora::factorial(int value)
 {
     int i;
     int factorial = 1;
-    for(i = 1; i<=value; i++)
+    for(i = 1; i <= value; i++)
     {
         factorial = factorial * i;
     }
