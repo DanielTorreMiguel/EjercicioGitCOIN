@@ -13,8 +13,8 @@
 class Calculadora: public Dispositivo {
 public:
     Calculadora();
-    virtual void print_device() override;
-    void show_operations();
+    virtual void print_device(std::ostream& os) override;
+    void show_operations(std::ostream& os);
     double Suma(double value1,double value2);
     double Resta(double value1, double value2);
     double Multiplicacion(double value1,double value2);

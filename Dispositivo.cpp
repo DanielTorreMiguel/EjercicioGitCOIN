@@ -7,7 +7,7 @@
 
 #include "Dispositivo.h"
 
-void Dispositivo::print_device(){
+void Dispositivo::print_device(std::ostream& os){
 
 }
 

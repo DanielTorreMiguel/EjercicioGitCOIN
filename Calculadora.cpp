@@ -61,8 +61,8 @@ Calculadora::Calculadora() {
 * METHOD NAME: print_device()
 * DESCRIPTION: This method displays the device name
 */
-void Calculadora::print_device(){
-    std::cout << "Calculadora COIN" << std::endl;
+void Calculadora::print_device(std::ostream& os){
+    os << "Calculadora COIN";
 }
 
 /**
@@ -70,17 +70,8 @@ void Calculadora::print_device(){
 * DESCRIPTION: This method displays the set of functions that our calculator can support
 */
 
-void Calculadora::show_operations(){
-    std::cout << "Las funciones que soporta esta calculadora son: " << std::endl;
-    std::cout << "- Suma" << std::endl;
-    std::cout << "- Resta" << std::endl;
-    std::cout << "- Multiplicacion" << std::endl;
-    std::cout << "- Division " << std::endl;
-    std::cout << "- Modulo " << std::endl;
-    std::cout << "- Logaritmo neperiano " << std::endl;
-    std::cout << "- Raiz cuadrada " << std::endl;
-    std::cout << "- Potencia " << std::endl;
-    std::cout << "- Factorial " << std::endl;
+void Calculadora::show_operations(std::ostream& os){
+    os << "Las funciones que soporta esta calculadora son:" << std::endl << "- Suma" << std::endl << "- Resta" << std::endl << "- Multiplicacion" << std::endl << "- Division" << std::endl << "- Modulo" << std::endl << "- Logaritmo neperiano" << std::endl << "- Raiz cuadrada" << std::endl << "- Potencia" << std::endl << "- Factorial";
 }
 
 
