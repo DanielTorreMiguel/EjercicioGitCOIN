@@ -8,9 +8,11 @@
 #ifndef DISPOSITIVO_H_
 #define DISPOSITIVO_H_
 
+#include <sstream>
+
 class Dispositivo {
 public:
-    virtual void print_device() = 0;
+    virtual void print_device(std::ostream& os) = 0;
     virtual ~Dispositivo();
 };
 

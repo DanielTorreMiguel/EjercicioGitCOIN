@@ -18,7 +18,9 @@ using namespace std;
 
 int main() {
     Calculadora c;
-    c.show_operations();
+    std::ostringstream oss;
+    c.show_operations(oss);
+    std::cout << oss.str() << std::endl;
     double a{0.0}, b{0.0};
     int a_int{0}, b_int{0};
     string operador;

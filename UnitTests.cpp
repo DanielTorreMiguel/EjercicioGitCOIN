@@ -22,6 +22,27 @@ void assert(bool condition, char *err_msg)
     }
 }
 
+void test_print_device()
+{
+    Calculadora c = Calculadora();
+
+    std::ostringstream oss;
+    c.print_device(oss);
+    assert(oss && oss.str() == "Calculadora COIN", "test print_device failed!");
+    cerr << "Print_device tests done" <<endl;
+}
+
+void test_show_operations()
+{
+    Calculadora c = Calculadora();
+
+    std::ostringstream oss;
+    c.show_operations(oss);
+    assert(oss && oss.str() == "Las funciones que soporta esta calculadora son:\n- Suma\n- Resta\n- Multiplicacion\n- Division\n- Modulo\n- Logaritmo neperiano\n- Raiz cuadrada\n- Potencia\n- Factorial", "test show_operations failed!");
+    cerr << "Show_operations tests done" <<endl;
+
+}
+
 void test_log()
 {
     double valor;
@@ -86,6 +107,8 @@ void test_fact()
 int main()
 {
     cout << "Pruebas unitarias";
+    test_print_device();
+    test_show_operations();
     test_log();
     test_pow();
     test_sqrt();
